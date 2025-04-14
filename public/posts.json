@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "cpu-caches-explained-with-grocery-shopping-log",
+    "title": "CPU Caches Explained with Grocery Shopping",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "cpu",
+      "cache",
+      "memory"
+    ],
+    "date": "2025-04-14",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**CPU Caches Explained with Grocery Shopping** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way possib..."
+  },
+  {
+    "slug": "np-complete-problems-are-the-weirdos-of-cs-log",
+    "title": "NP-Complete Problems Are the Weirdos of CS",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "cs",
+      "algorithms",
+      "computing"
+    ],
+    "date": "2025-04-14",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**NP-Complete Problems Are the Weirdos of CS** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way possib..."
+  },
+  {
+    "slug": "how-computers-actually-multiply-numbers-its-not-what-you-think-log",
+    "title": "How Computers Actually Multiply Numbers (It's Not What You Think)",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "binary",
+      "bits",
+      "multiplication"
+    ],
+    "date": "2025-04-14",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**How Computers Actually Multiply Numbers (It's Not What You Think)** dives deep into something every CS nerd should care about \u2014 in the nerdi..."
+  },
+  {
+    "slug": "how-hash-maps-work-and-why-python-dicts-are-built-different-log",
+    "title": "How Hash Maps Work (and Why Python Dicts Are Built Different)",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "python",
+      "hash",
+      "dicts"
+    ],
+    "date": "2025-04-14",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**How Hash Maps Work (and Why Python Dicts Are Built Different)** dives deep into something every CS nerd should care about \u2014 in the nerdiest,..."
+  }
+]
