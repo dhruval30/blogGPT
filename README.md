@@ -1,12 +1,13 @@
-# React + Vite
+# blogGPT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This started as a fun way to automate daily GitHub commits.  
+Then it became something better — a blog that writes itself.
 
-Currently, two official plugins are available:
+**blogGPT** is a self-writing blog that publishes a new computer science post every day — fully automated.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It picks a topic, uses Llama 3 to generate a full post in Markdown, pulls out 3 smart tags, and saves everything for the frontend. No humans involved.
 
-## Expanding the ESLint configuration
+Built with Python, React, LLMs and a bit of love.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The goal: build a growing, readable CS knowledge base that writes itself.  
+*(And yeah... keep my commits going too.)*
