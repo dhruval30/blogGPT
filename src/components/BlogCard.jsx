@@ -5,8 +5,14 @@ import { Link } from 'react-router-dom';
 export default function BlogCard({ post }) {
   const { slug, title, date, description, tags } = post;
 
-  // Format the date
-  const formattedDate = format(new Date(date), 'MMM d, yyyy');
+  // Safely format date or show fallback
+  let formattedDate = 'Unknown date';
+  if (date) {
+    const parsedDate = new Date(date);
+    if (!isNaN(parsedDate)) {
+      formattedDate = format(parsedDate, 'MMM d, yyyy');
+    }
+  }
 
   return (
     <article className="border-b border-gray-200 py-6 flex flex-col md:flex-row md:items-start">

@@ -27,7 +27,6 @@ TOPIC_LIST = [
     "Stack Overflow Lied to Me: The Real Deal on Mutable Default Arguments in Python",
     "I Finally Understand Binary Search Trees. Here's the Mental Model That Helped",
     "Dijkstra's Algorithm Walkthrough: How I Visualized Shortest Paths While Walking My Dog",
-    "Dynamic Programming Isn't Hard — Your Brain Just Wants to See It Differently",
     "How Hash Maps Work (and Why Python Dicts Are Built Different)",
     "Merge Sort Explained with IKEA Furniture",
     "What Is an API, Really? And Why I Built a Dumb One in Flask to Learn",

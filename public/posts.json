@@ -1,5 +1,33 @@
 [
   {
+    "slug": "pointers-in-c-explained-like-im-explaining-to-myself-at-2am-log",
+    "title": "Pointers in C Explained Like I'm Explaining to Myself at 2AM",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "c",
+      "pointers",
+      "programming"
+    ],
+    "date": "2025-04-15",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Pointers in C Explained Like I'm Explaining to Myself at 2AM** dives deep into something every CS nerd should care about \u2014 in the nerdiest, ..."
+  },
+  {
+    "slug": "what-is-an-api-really-and-why-i-built-a-dumb-one-in-flask-to-learn-log",
+    "title": "What Is an API, Really? And Why I Built a Dumb One in Flask to Learn",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "api",
+      "flask",
+      "python"
+    ],
+    "date": "2025-04-15",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**What Is an API, Really? And Why I Built a Dumb One in Flask to Learn** dives deep into something every CS nerd should care about \u2014 in the ne..."
+  },
+  {
     "slug": "merge-sort-explained-with-ikea-furniture-log",
     "title": "Merge Sort Explained with IKEA Furniture",
     "authors": [
@@ -68,9 +96,5 @@
     ],
     "date": "2025-04-14",
     "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**How Hash Maps Work (and Why Python Dicts Are Built Different)** dives deep into something every CS nerd should care about \u2014 in the nerdiest,..."
-  },
-  {
-    "slug": "dynamic-programming-isnt-hard",
-    "excerpt": "your-brain-just-wants-to-see-it-differently-log\ntitle: Dynamic Programming Isn't Hard \u2014 Your Brain Just Wants to See It Differently\nauthors: [dhruval]\ntags: [programming, algorithm, coding]\ndate: 2025..."
   }
 ]
