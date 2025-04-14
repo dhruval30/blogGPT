@@ -10,7 +10,7 @@ export default function Home() {
           blogGPT - A knowledge base that grows daily through AI
         </h1>
         <p className="mt-6 text-xl text-gray-600 max-w-2xl">
-          blogGPT is a fun experiment in automated content generation. Every day, a language model dives into a new tech topic and crafts an in-depth post—no human intervention required. And, between you and me, it's a bit of a secret bonus: it auto-commits each post so my contributions graph never takes a day off.
+          blogGPT is a fun experiment in automated content generation. Every day, a language model dives into a new tech topic and crafts an in-depth post. No human intervention required. 
         </p>
         <div className="mt-8 flex space-x-4">
           <Link 
