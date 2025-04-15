@@ -1,5 +1,19 @@
 [
   {
+    "slug": "cpu-caches-explained-with-grocery-shopping-log",
+    "title": "CPU Caches Explained with Grocery Shopping",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "caches",
+      "cpu",
+      "coding"
+    ],
+    "date": "2025-04-15",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**CPU Caches Explained with Grocery Shopping** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way possib..."
+  },
+  {
     "slug": "pointers-in-c-explained-like-im-explaining-to-myself-at-2am-log",
     "title": "Pointers in C Explained Like I'm Explaining to Myself at 2AM",
     "authors": [
@@ -28,6 +42,20 @@
     "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**What Is an API, Really? And Why I Built a Dumb One in Flask to Learn** dives deep into something every CS nerd should care about \u2014 in the ne..."
   },
   {
+    "slug": "process-vs-thread-explained-using-bad-roommate-metaphors-log",
+    "title": "Process vs Thread Explained Using Bad Roommate Metaphors",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "threads",
+      "processes",
+      "programming"
+    ],
+    "date": "2025-04-15",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Process vs Thread Explained Using Bad Roommate Metaphors** dives deep into something every CS nerd should care about \u2014 in the nerdiest, cool..."
+  },
+  {
     "slug": "merge-sort-explained-with-ikea-furniture-log",
     "title": "Merge Sort Explained with IKEA Furniture",
     "authors": [
@@ -40,6 +68,20 @@
     ],
     "date": "2025-04-15",
     "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Merge Sort Explained with IKEA Furniture** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way possible..."
+  },
+  {
+    "slug": "lambda-calculus-is-just-functions-heres-the-fun-side-log",
+    "title": "Lambda Calculus Is Just Functions. Here's the Fun Side.",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "lambda",
+      "functions",
+      "coding"
+    ],
+    "date": "2025-04-15",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Lambda Calculus Is Just Functions. Here's the Fun Side.** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coole..."
   },
   {
     "slug": "cpu-caches-explained-with-grocery-shopping-log",
@@ -96,5 +138,9 @@
     ],
     "date": "2025-04-14",
     "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**How Hash Maps Work (and Why Python Dicts Are Built Different)** dives deep into something every CS nerd should care about \u2014 in the nerdiest,..."
+  },
+  {
+    "slug": "dynamic-programming-isnt-hard",
+    "excerpt": "your-brain-just-wants-to-see-it-differently-log\ntitle: Dynamic Programming Isn't Hard \u2014 Your Brain Just Wants to See It Differently\nauthors: [dhruval]\ntags: [programming, algorithm, coding]\ndate: 2025..."
   }
 ]
