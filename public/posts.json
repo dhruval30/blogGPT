@@ -1,5 +1,47 @@
 [
   {
+    "slug": "how-i-used-ai-to-teach-me-linked-lists-and-it-worked-log",
+    "title": "How I Used AI to Teach Me Linked Lists (and It Worked)",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "ai",
+      "python",
+      "linkedlists"
+    ],
+    "date": "2025-04-16",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**How I Used AI to Teach Me Linked Lists (and It Worked)** dives deep into something every CS nerd should care about \u2014 in the nerdiest, cooles..."
+  },
+  {
+    "slug": "what-building-a-self-writing-cs-website-taught-me-about-control-and-letting-go-log",
+    "title": "What Building a Self-Writing CS Website Taught Me About Control (And Letting Go)",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "code",
+      "ml",
+      "nlp"
+    ],
+    "date": "2025-04-16",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**What Building a Self-Writing CS Website Taught Me About Control (And Letting Go)** dives deep into something every CS nerd should care about..."
+  },
+  {
+    "slug": "the-ai-said-use-tail-recursion-i-panicked-then-i-understood-log",
+    "title": "The AI Said 'Use Tail Recursion'. I Panicked. Then I Understood.",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "programming",
+      "recursion",
+      "optimization"
+    ],
+    "date": "2025-04-16",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**The AI Said 'Use Tail Recursion'. I Panicked. Then I Understood.** dives deep into something every CS nerd should care about \u2014 in the nerdie..."
+  },
+  {
     "slug": "cpu-caches-explained-with-grocery-shopping-log",
     "title": "CPU Caches Explained with Grocery Shopping",
     "authors": [
