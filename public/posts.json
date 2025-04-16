@@ -1,5 +1,19 @@
 [
   {
+    "slug": "what-happens-when-you-type-googlecom-in-your-browser-but-actually-log",
+    "title": "What Happens When You Type 'google.com' in Your Browser? (But Actually)",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "networking",
+      "dns",
+      "http"
+    ],
+    "date": "2025-04-16",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**What Happens When You Type 'google.com' in Your Browser? (But Actually)** dives deep into something every CS nerd should care about \u2014 in the..."
+  },
+  {
     "slug": "how-i-used-ai-to-teach-me-linked-lists-and-it-worked-log",
     "title": "How I Used AI to Teach Me Linked Lists (and It Worked)",
     "authors": [
@@ -12,6 +26,34 @@
     ],
     "date": "2025-04-16",
     "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**How I Used AI to Teach Me Linked Lists (and It Worked)** dives deep into something every CS nerd should care about \u2014 in the nerdiest, cooles..."
+  },
+  {
+    "slug": "how-hash-maps-work-and-why-python-dicts-are-built-different-log",
+    "title": "How Hash Maps Work (and Why Python Dicts Are Built Different)",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "hash",
+      "python",
+      "dicts"
+    ],
+    "date": "2025-04-16",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**How Hash Maps Work (and Why Python Dicts Are Built Different)** dives deep into something every CS nerd should care about \u2014 in the nerdiest,..."
+  },
+  {
+    "slug": "process-vs-thread-explained-using-bad-roommate-metaphors-log",
+    "title": "Process vs Thread Explained Using Bad Roommate Metaphors",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "concurrency",
+      "threads",
+      "processes"
+    ],
+    "date": "2025-04-16",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Process vs Thread Explained Using Bad Roommate Metaphors** dives deep into something every CS nerd should care about \u2014 in the nerdiest, cool..."
   },
   {
     "slug": "what-building-a-self-writing-cs-website-taught-me-about-control-and-letting-go-log",
