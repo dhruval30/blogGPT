@@ -26,7 +26,6 @@ def generate_single_cs_topic():
     Generate ONE unique, funny, clever, and educational blog post title that teaches a CS topic in a quirky way.
     
     ✦ Avoid overused topics like: recursion, pointers, "what happens when you type...", binary trees, or sorting algorithms.
-    ✦ Instead, explore things like: OS internals, concurrency, compilers, caches, distributed systems, weird bugs, or misunderstood design patterns.
     ✦ The title should feel like something a burned-out grad student would post at 3AM with too much caffeine.
     ✦ Format: a JSON string like "Your blog title here"
     ✦ Do not repeat ideas. Be original. Be weird. Be oddly specific.
