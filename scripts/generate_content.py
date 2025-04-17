@@ -19,37 +19,28 @@ DOCS_JSON_PATH = PUBLIC_PATH / "docs.json"
 AUTHOR_ID = "dhruval"
 
 # === Better Blog-Worthy CS Prompts ===
-TOPIC_LIST = [
-    "Why You're Probably Misunderstanding Recursion — And Why That's Okay",
-    "Pointers in C Explained Like I'm Explaining to Myself at 2AM",
-    "I Wrote My Own Shell in Python. Here's What I Broke (and Learned)",
-    "What Happens When You Type 'google.com' in Your Browser? (But Actually)",
-    "Stack Overflow Lied to Me: The Real Deal on Mutable Default Arguments in Python",
-    "I Finally Understand Binary Search Trees. Here's the Mental Model That Helped",
-    "Dijkstra's Algorithm Walkthrough: How I Visualized Shortest Paths While Walking My Dog",
-    "How Hash Maps Work (and Why Python Dicts Are Built Different)",
-    "Merge Sort Explained with IKEA Furniture",
-    "What Is an API, Really? And Why I Built a Dumb One in Flask to Learn",
-    "Understanding OAuth with Zero Buzzwords",
-    "I Made a URL Shortener in 15 Lines of Code and Now I Think I'm a Backend Dev",
-    "A Beginner's Guide to How Databases Actually Store Your Data",
-    "How JavaScript Event Loop Works — with Vibes and Visuals",
-    "What Is a Compiler and Why Does It Feel Like Wizardry?",
-    "Memory Management for Humans Who Never Took OS 101",
-    "How Computers Actually Multiply Numbers (It's Not What You Think)",
-    "CPU Caches Explained with Grocery Shopping",
-    "Process vs Thread Explained Using Bad Roommate Metaphors",
-    "Big O Isn't Just a Buzzword. Here's Why You Should Care",
-    "Turing Machines Explained with Whiteboards and Sharpies",
-    "Lambda Calculus Is Just Functions. Here's the Fun Side.",
-    "NP-Complete Problems Are the Weirdos of CS",
-    "Regex is Black Magic — Until You Realize It's Just Finite State Machines",
-    "How I Used AI to Teach Me Linked Lists (and It Worked)",
-    "I Let GPT Refactor My Old Code. The Results Were... Unexpected",
-    "Daily AI Lessons: Why I Genuinely Learn More This Way Than From YouTube",
-    "The AI Said 'Use Tail Recursion'. I Panicked. Then I Understood.",
-    "What Building a Self-Writing CS Website Taught Me About Control (And Letting Go)"
-]
+def generate_single_cs_topic():
+    prompt = """
+    Generate one funny, clever, and educational blog post title that teaches a computer science concept.
+    The style should feel like a Reddit/HackerNews post — make it sound nerdy, click-worthy, and fun.
+    Avoid boring textbook phrases.
+
+    Output format: a JSON string like "Your blog title here"
+    """
+
+    try:
+        response = client.chat.completions.create(
+            messages=[{"role": "user", "content": prompt}],
+            model="llama-3.3-70b-versatile",
+            stream=False,
+        )
+        content = response.choices[0].message.content.strip()
+        topic = json.loads(content) if content.startswith('"') else content
+        return topic
+
+    except Exception as e:
+        print(f"Error generating topic: {e}")
+
 
 def create_directories():
     """Create necessary directories if they don't exist."""
@@ -364,8 +355,11 @@ def main():
     create_directories()
     
     # Pick topic for the day
-    topic = random.choice(TOPIC_LIST)
+    # Dynamically generate a new blog topic
+    print("Generating a fresh CS blog topic...")
+    topic = generate_single_cs_topic()
     print(f"Selected topic: {topic}")
+
     
     # Generate content + tags using Groq
     print("Generating content and tags...")
