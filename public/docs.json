@@ -1,5 +1,17 @@
 [
-  
+  {
+    "id": "understanding-deadlocks-in-operating-systems",
+    "title": "\"Understanding Deadlocks in Operating Systems\"",
+    "description": "LLM-generated CS blog lesson on Understanding Deadlocks in Operating Systems.",
+    "sidebar_position": 1,
+    "tags": [
+      "deadlocks",
+      "os",
+      "threads"
+    ],
+    "date": "2025-04-17",
+    "content": "# Understanding Deadlocks in Operating Systems\n=============================================\n\nHey fellow tech enthusiasts, have you ever been stuck in a situation where two or more processes are waiting for each other to release a resource, but neither of them is willing to back down? This, my friends, is what we call a **deadlock**. In this post, we're going to delve into the world of deadlocks, explore what causes them, and learn how to avoid them.\n\n## What is a Deadlock?\n--------------------\n..."
+  },
   {
     "id": "cpu-caches-explained-with-grocery-shopping",
     "title": "CPU Caches Explained with Grocery Shopping",

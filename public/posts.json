@@ -1,5 +1,18 @@
 [
-
+  {
+    "slug": "understanding-deadlocks-in-operating-systems-log",
+    "title": "\"Understanding Deadlocks in Operating Systems\"",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "deadlocks",
+      "os",
+      "threads"
+    ],
+    "date": "2025-04-17",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Understanding Deadlocks in Operating Systems** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way poss..."
+  },
   {
     "slug": "what-happens-when-you-type-googlecom-in-your-browser-but-actually-log",
     "title": "What Happens When You Type 'google.com' in Your Browser? (But Actually)",

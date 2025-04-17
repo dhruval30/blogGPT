@@ -24,20 +24,18 @@ AUTHOR_ID = "dhruval"
 # === Better Blog-Worthy CS Prompts ===
 def generate_cs_topic():
     prompt = """
-    You are an expert CS educator and tech blogger with a flair for writing viral, weirdly specific, Reddit-style posts.
+I'm creating a technical blog series for computer science students and developers.
 
-    Generate ONE unique, funny, clever, and educational blog post title that teaches a CS topic in a quirky way.
-    
-    ✦ Avoid overused topics like: recursion, pointers, "what happens when you type...", binary trees, or sorting algorithms.
-    ✦ Format: Return just the title as a plain text string, no quotes or JSON formatting
-    ✦ Do not repeat ideas. Be original. Be weird. Be oddly specific.
+Generate ONE short and original blog post title that meets the following criteria:
+- Slightly cool and engaging, without sounding forced or overly casual
+- Clear and informative, explaining a fundamental computer science concept accessibly
+- Fits within broad categories like systems, operating systems, web development, algorithms, networking, or software engineering
+- Keep the title concise — ideally under 15 words
+- Do not repeat common ideas like recursion, binary search, or "what happens when you type..."
 
-    Examples (don't repeat):
-    - How I Accidentally DDOSed Myself with a While Loop and a Pizza Tracker
-    - Threads, Forks, and Existential Dread: A Crash Course in Concurrency
-    - Why My Compiler Screams When I Use Macros This Way
-    - A Deep Dive Into File Descriptors (aka How I Broke My Terminal for 2 Hours)
-    """
+Return only the title as plain text. Dont enclose it in quotes, no formatting, no extra explanation.
+"""
+
 
     try:
         response = client.chat.completions.create(
