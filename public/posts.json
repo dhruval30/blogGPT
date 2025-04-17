@@ -1,18 +1,5 @@
 [
-  {
-    "slug": "i-spent-48-hours-trying-to-optimize-a-toaster-simulator-and-learned-everything-about-cache-locality-log",
-    "title": "\"I Spent 48 Hours Trying to Optimize a Toaster Simulator and Learned Everything About Cache Locality\"",
-    "authors": [
-      "dhruval"
-    ],
-    "tags": [
-      "cache",
-      "optimization",
-      "performance"
-    ],
-    "date": "2025-04-17",
-    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**I Spent 48 Hours Trying to Optimize a Toaster Simulator and Learned Everything About Cache Locality** dives deep into something every CS ner..."
-  },
+
   {
     "slug": "what-happens-when-you-type-googlecom-in-your-browser-but-actually-log",
     "title": "What Happens When You Type 'google.com' in Your Browser? (But Actually)",
