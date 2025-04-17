@@ -1,3 +1,5 @@
+// src/pages/About.jsx
+
 import { useState } from 'react';
 
 export default function About() {

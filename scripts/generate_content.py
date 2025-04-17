@@ -1,5 +1,4 @@
 import os
-import random
 import json
 from datetime import datetime
 from pathlib import Path
@@ -7,34 +6,37 @@ from groq import Groq
 import time
 
 # === Setup Groq Client ===
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+client = Groq(
+    api_key=os.environ.get("GROQ_API_KEY"),
+)
 
 # === Paths ===
 CONTENT_PATH = Path("content")
 DOCS_PATH = CONTENT_PATH / "docs"
 BLOG_PATH = CONTENT_PATH / "blog"
 PUBLIC_PATH = Path("public")
+PUBLIC_POSTS_DIR = PUBLIC_PATH / "posts"
+PUBLIC_DOCS_DIR = PUBLIC_PATH / "docs"
 POSTS_JSON_PATH = PUBLIC_PATH / "posts.json"
 DOCS_JSON_PATH = PUBLIC_PATH / "docs.json"
 AUTHOR_ID = "dhruval"
 
 # === Better Blog-Worthy CS Prompts ===
-def generate_single_cs_topic():
+def generate_cs_topic():
     prompt = """
     You are an expert CS educator and tech blogger with a flair for writing viral, weirdly specific, Reddit-style posts.
 
     Generate ONE unique, funny, clever, and educational blog post title that teaches a CS topic in a quirky way.
     
     ✦ Avoid overused topics like: recursion, pointers, "what happens when you type...", binary trees, or sorting algorithms.
-    ✦ The title should feel like something a burned-out grad student would post at 3AM with too much caffeine.
-    ✦ Format: a JSON string like "Your blog title here"
+    ✦ Format: Return just the title as a plain text string, no quotes or JSON formatting
     ✦ Do not repeat ideas. Be original. Be weird. Be oddly specific.
 
-    Examples (don’t repeat):
-    - "How I Accidentally DDOSed Myself with a While Loop and a Pizza Tracker"
-    - "Threads, Forks, and Existential Dread: A Crash Course in Concurrency"
-    - "Why My Compiler Screams When I Use Macros This Way"
-    - "A Deep Dive Into File Descriptors (aka How I Broke My Terminal for 2 Hours)"
+    Examples (don't repeat):
+    - How I Accidentally DDOSed Myself with a While Loop and a Pizza Tracker
+    - Threads, Forks, and Existential Dread: A Crash Course in Concurrency
+    - Why My Compiler Screams When I Use Macros This Way
+    - A Deep Dive Into File Descriptors (aka How I Broke My Terminal for 2 Hours)
     """
 
     try:
@@ -44,37 +46,50 @@ def generate_single_cs_topic():
             stream=False,
         )
         content = response.choices[0].message.content.strip()
-        topic = json.loads(content) if content.startswith('"') else content
-        return topic
-
+        
+        # Clean the response - ensure we just get a plain string
+        if content.startswith('"') and content.endswith('"'):
+            content = content[1:-1]
+        elif content.startswith('{') and content.endswith('}'):
+            # Try to extract just the title string from JSON
+            try:
+                content_obj = json.loads(content)
+                if isinstance(content_obj, dict) and len(content_obj) > 0:
+                    # Take the first value if it's a dictionary
+                    content = list(content_obj.values())[0]
+            except:
+                # If JSON parsing fails, just strip braces
+                content = content.strip('{}').strip('"').strip()
+                
+        return content
     except Exception as e:
         print(f"Error generating topic: {e}")
-
+        return "Exploring Esoteric CS Concepts at 3AM"  # Fallback title
 
 def create_directories():
     """Create necessary directories if they don't exist."""
-    for path in [DOCS_PATH, BLOG_PATH, PUBLIC_PATH]:
+    for path in [DOCS_PATH, BLOG_PATH, PUBLIC_PATH, PUBLIC_POSTS_DIR, PUBLIC_DOCS_DIR]:
         path.mkdir(parents=True, exist_ok=True)
-    
-    # Create subdirectories for individual JSON files
-    public_posts_dir = PUBLIC_PATH / "posts"
-    public_docs_dir = PUBLIC_PATH / "docs"
-    public_posts_dir.mkdir(exist_ok=True)
-    public_docs_dir.mkdir(exist_ok=True)
 
 def generate_slug(title):
-    """Generate a slug from the title."""
-    return title.lower() \
-        .replace("'", "") \
-        .replace("'", "") \
-        .replace("'", "") \
-        .replace("?", "") \
-        .replace(",", "") \
-        .replace(".", "") \
-        .replace("(", "") \
-        .replace(")", "") \
-        .replace("—", "-") \
-        .replace(" ", "-")
+    """Generate a URL-friendly slug from the title."""
+    # More comprehensive sanitization
+    slug = title.lower()
+    replacements = {
+        "'": "", "'": "", "'": "", "?": "", ",": "", ".": "",
+        "(": "", ")": "", "—": "-", " ": "-", "{": "", "}": "",
+        '"': "", """: "", """: "", ":": "", ";": "", "!": "",
+        "[": "", "]": "", "/": "-", "\\": "-", "&": "and"
+    }
+    for old, new in replacements.items():
+        slug = slug.replace(old, new)
+    
+    # Handle multiple consecutive hyphens
+    while "--" in slug:
+        slug = slug.replace("--", "-")
+    
+    # Trim hyphens from start and end
+    return slug.strip("-")
 
 def generate_content(topic):
     """Generate content and tags using Groq API."""
@@ -94,7 +109,7 @@ def generate_content(topic):
         )
         blog_markdown = blog_response.choices[0].message.content.strip()
 
-        # Step 2: Now generate tags using that markdown
+        # Step 2: Generate tags
         tag_prompt = f"""
         Based on the following blog content, give 3 to 5 relevant tags.
         Tags should be lowercase, short, and one word each. Return only a JSON array like ["tag1", "tag2"].
@@ -111,9 +126,11 @@ def generate_content(topic):
         tags_raw = tag_response.choices[0].message.content.strip()
 
         # Parse tags safely
-        tags = json.loads(tags_raw) if tags_raw.startswith("[") else ["cs"]
-        tags = tags[:3]  # Limit to top 3 tags
-
+        try:
+            tags = json.loads(tags_raw) if tags_raw.startswith("[") else ["cs"]
+            tags = tags[:3]  # Limit to top 3 tags
+        except:
+            tags = ["cs", "programming", "tech"]
 
         return blog_markdown, tags
 
@@ -121,17 +138,16 @@ def generate_content(topic):
         print(f"Error generating content or tags: {e}")
         return f"# {topic}\n\n*Placeholder content*", ["cs"]
 
-
 def write_markdown_files(topic, blog_markdown, tags):
-    """Write the markdown files to docs/ and blog/."""
+    """Write the markdown files to docs/ and blog/ directories."""
     today = datetime.now().strftime("%Y-%m-%d")
     slug = generate_slug(topic)
     
-    # Content for docs/
+    # Content for docs/ directory
     doc_filename = DOCS_PATH / f"{today}-{slug}.md"
     doc_content = f"""---
 id: {slug}
-title: {topic}
+title: "{topic}"
 description: LLM-generated CS blog lesson on {topic}.
 sidebar_position: 1
 tags: [{', '.join(tags)}]
@@ -142,11 +158,11 @@ date: {today}
 """
     doc_filename.write_text(doc_content, encoding="utf-8")
     
-    # Content for blog/
+    # Content for blog/ directory
     blog_filename = BLOG_PATH / f"{today}-{slug}-log.md"
     blog_content = f"""---
 slug: {slug}-log
-title: {topic}
+title: "{topic}"
 authors: [{AUTHOR_ID}]
 tags: [{', '.join(tags)}]
 date: {today}
@@ -156,7 +172,7 @@ Here's today's drop from KnowGrow — and it's a good one.
 
 **{topic}** dives deep into something every CS nerd should care about — in the nerdiest, coolest way possible.
 
-🔗 [Read the full article](/docs/{today}-{slug})
+🔗 [Read the full article](/docs/{slug})
 """
     blog_filename.write_text(blog_content, encoding="utf-8")
     
@@ -167,15 +183,28 @@ Here's today's drop from KnowGrow — and it's a good one.
         "slug": slug
     }
 
-def update_json_indexes():
-    """Update the JSON indexes for posts and docs."""
-    # Generate posts.json
+def update_posts_json(new_post_data):
+    """Update posts.json with the new blog post."""
+    # Read existing posts
     posts = []
-    for file_path in BLOG_PATH.glob("*.md"):
-        with open(file_path, "r", encoding="utf-8") as f:
+    if POSTS_JSON_PATH.exists():
+        try:
+            with open(POSTS_JSON_PATH, "r", encoding="utf-8") as f:
+                posts = json.load(f)
+        except:
+            posts = []
+    
+    # Add new post metadata
+    slug = new_post_data["slug"]
+    date = new_post_data["date"]
+    
+    # Read the blog file to get frontmatter
+    blog_path = BLOG_PATH / f"{date}-{slug}-log.md"
+    if blog_path.exists():
+        with open(blog_path, "r", encoding="utf-8") as f:
             content = f.read()
             
-        # Simple frontmatter parsing
+        # Extract frontmatter
         if content.startswith("---"):
             frontmatter_end = content.find("---", 3)
             if frontmatter_end != -1:
@@ -202,21 +231,47 @@ def update_json_indexes():
                             post[key] = value
                 
                 post["excerpt"] = body[:200] + "..." if len(body) > 200 else body
-                posts.append(post)
+                
+                # Add only if not already in the list
+                post_exists = False
+                for i, existing_post in enumerate(posts):
+                    if existing_post.get("slug") == post.get("slug"):
+                        posts[i] = post  # Replace with updated version
+                        post_exists = True
+                        break
+                
+                if not post_exists:
+                    posts.append(post)
     
-    # Sort by date
+    # Sort by date (newest first)
     posts.sort(key=lambda x: x.get("date", ""), reverse=True)
     
     # Write posts.json
     with open(POSTS_JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(posts, f, indent=2)
-    
-    # Similar process for docs.json
+
+def update_docs_json(new_post_data):
+    """Update docs.json with the new doc."""
+    # Read existing docs
     docs = []
-    for file_path in DOCS_PATH.glob("*.md"):
-        with open(file_path, "r", encoding="utf-8") as f:
+    if DOCS_JSON_PATH.exists():
+        try:
+            with open(DOCS_JSON_PATH, "r", encoding="utf-8") as f:
+                docs = json.load(f)
+        except:
+            docs = []
+    
+    # Add new doc metadata
+    slug = new_post_data["slug"]
+    date = new_post_data["date"]
+    
+    # Read the doc file to get frontmatter
+    doc_path = DOCS_PATH / f"{date}-{slug}.md"
+    if doc_path.exists():
+        with open(doc_path, "r", encoding="utf-8") as f:
             content = f.read()
             
+        # Extract frontmatter
         if content.startswith("---"):
             frontmatter_end = content.find("---", 3)
             if frontmatter_end != -1:
@@ -238,28 +293,35 @@ def update_json_indexes():
                         else:
                             doc[key] = value
                 
-                doc["content"] = body
-                docs.append(doc)
+                doc["content"] = body[:500] + "..." if len(body) > 500 else body
+                
+                # Add only if not already in the list
+                doc_exists = False
+                for i, existing_doc in enumerate(docs):
+                    if existing_doc.get("id") == doc.get("id"):
+                        docs[i] = doc  # Replace with updated version
+                        doc_exists = True
+                        break
+                
+                if not doc_exists:
+                    docs.append(doc)
     
-    # Sort docs by sidebar_position or title
+    # Sort by sidebar_position or title
     docs.sort(key=lambda x: (x.get("sidebar_position", 999), x.get("title", "")))
     
     # Write docs.json
     with open(DOCS_JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(docs, f, indent=2)
 
-def create_json_files():
-    """Create individual JSON files for the React frontend."""
-    public_posts_dir = PUBLIC_PATH / "posts"
-    public_docs_dir = PUBLIC_PATH / "docs"
+def create_individual_json_files(new_post_data):
+    """Create individual JSON files for the new post/doc."""
+    slug = new_post_data["slug"]
+    date = new_post_data["date"]
     
-    # Ensure directories exist
-    public_posts_dir.mkdir(exist_ok=True)
-    public_docs_dir.mkdir(exist_ok=True)
-    
-    # Process blog posts
-    for md_file in BLOG_PATH.glob("*.md"):
-        with open(md_file, "r", encoding="utf-8") as f:
+    # Process blog post
+    blog_path = BLOG_PATH / f"{date}-{slug}-log.md"
+    if blog_path.exists():
+        with open(blog_path, "r", encoding="utf-8") as f:
             content = f.read()
         
         # Extract frontmatter
@@ -287,27 +349,25 @@ def create_json_files():
                 
                 post_data["content"] = body
                 
-                # Save to JSON file - both with and without -log suffix
-                if "slug" in post_data:
-                    slug = post_data["slug"]
-                    
-                    # Save with original slug
-                    json_file = public_posts_dir / f"{slug}.json"
+                # Save with -log suffix
+                post_slug = post_data.get("slug", "")
+                json_file = PUBLIC_POSTS_DIR / f"{post_slug}.json"
+                with open(json_file, "w", encoding="utf-8") as f:
+                    json.dump(post_data, f, indent=2)
+                print(f"Created post JSON: {json_file}")
+                
+                # Also save without -log suffix
+                if post_slug.endswith("-log"):
+                    clean_slug = post_slug[:-4]
+                    json_file = PUBLIC_POSTS_DIR / f"{clean_slug}.json"
                     with open(json_file, "w", encoding="utf-8") as f:
                         json.dump(post_data, f, indent=2)
-                    print(f"Created post JSON: {json_file}")
-                    
-                    # Also save with -log suffix removed if present
-                    if slug.endswith("-log"):
-                        clean_slug = slug[:-4]
-                        json_file = public_posts_dir / f"{clean_slug}.json"
-                        with open(json_file, "w", encoding="utf-8") as f:
-                            json.dump(post_data, f, indent=2)
-                        print(f"Created post JSON (clean slug): {json_file}")
+                    print(f"Created post JSON (clean slug): {json_file}")
     
-    # Process docs (similar logic - create files with and without -log suffix)
-    for md_file in DOCS_PATH.glob("*.md"):
-        with open(md_file, "r", encoding="utf-8") as f:
+    # Process doc
+    doc_path = DOCS_PATH / f"{date}-{slug}.md"
+    if doc_path.exists():
+        with open(doc_path, "r", encoding="utf-8") as f:
             content = f.read()
         
         # Extract frontmatter
@@ -334,57 +394,52 @@ def create_json_files():
                 
                 doc_data["content"] = body
                 
-                # Save to JSON file with ID
-                if "id" in doc_data:
-                    doc_id = doc_data["id"]
-                    
-                    # Save with original ID
-                    json_file = public_docs_dir / f"{doc_id}.json"
-                    with open(json_file, "w", encoding="utf-8") as f:
-                        json.dump(doc_data, f, indent=2)
-                    print(f"Created doc JSON: {json_file}")
-                    
-                    # Also save with -log suffix if not present (for backward compatibility)
-                    if not doc_id.endswith("-log"):
-                        log_id = f"{doc_id}-log"
-                        json_file = public_docs_dir / f"{log_id}.json"
-                        with open(json_file, "w", encoding="utf-8") as f:
-                            json.dump(doc_data, f, indent=2)
-                        print(f"Created doc JSON (with log suffix): {json_file}")
-                    
-                    # Save with the full filename as the ID too
-                    full_id = md_file.stem  # Gets filename without extension
-                    full_json_file = public_docs_dir / f"{full_id}.json"
-                    with open(full_json_file, "w", encoding="utf-8") as f:
-                        json.dump(doc_data, f, indent=2)
-                    print(f"Created doc JSON (full ID): {full_json_file}")
+                # Save with original ID
+                doc_id = doc_data.get("id", "")
+                json_file = PUBLIC_DOCS_DIR / f"{doc_id}.json"
+                with open(json_file, "w", encoding="utf-8") as f:
+                    json.dump(doc_data, f, indent=2)
+                print(f"Created doc JSON: {json_file}")
+                
+                # Save with -log suffix as well
+                log_id = f"{doc_id}-log"
+                json_file = PUBLIC_DOCS_DIR / f"{log_id}.json"
+                with open(json_file, "w", encoding="utf-8") as f:
+                    json.dump(doc_data, f, indent=2)
+                print(f"Created doc JSON (with log suffix): {json_file}")
+                
+                # Save with date prefix
+                full_id = doc_path.stem  # Gets filename without extension
+                json_file = PUBLIC_DOCS_DIR / f"{full_id}.json"
+                with open(json_file, "w", encoding="utf-8") as f:
+                    json.dump(doc_data, f, indent=2)
+                print(f"Created doc JSON (full ID): {json_file}")
 
 def main():
     """Main function to generate and save content."""
     create_directories()
     
-    # Pick topic for the day
-    # Dynamically generate a new blog topic
+    # Generate a new blog topic
     print("Generating a fresh CS blog topic...")
-    topic = generate_single_cs_topic()
+    topic = generate_cs_topic()
     print(f"Selected topic: {topic}")
-
     
-    # Generate content + tags using Groq
+    # Generate content and tags
     print("Generating content and tags...")
     blog_markdown, tags = generate_content(topic)
     
-    # Write markdown files (docs + blog)
+    # Write markdown files
     print("Writing markdown files...")
     file_paths = write_markdown_files(topic, blog_markdown, tags)
     
-    # Update main index files (posts.json, docs.json)
+    # Update JSON files
     print("Updating JSON indexes...")
-    update_json_indexes()
+    update_posts_json(file_paths)
+    update_docs_json(file_paths)
     
-    # Create per-post and per-doc JSONs for React frontend
+    # Create individual JSON files
     print("Creating individual JSON files...")
-    create_json_files()
+    create_individual_json_files(file_paths)
     
     print(f"New lesson + blog generated for: {topic}")
     print(f"Doc: {file_paths['doc_path']}")

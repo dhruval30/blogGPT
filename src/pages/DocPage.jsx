@@ -1,3 +1,4 @@
+// src/pages/DocPage.jsx
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import MarkdownRenderer from '../components/MarkdownRenderer';
