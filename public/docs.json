@@ -1,5 +1,18 @@
 [
   {
+    "id": "i-spent-48-hours-trying-to-optimize-a-toaster-simulator-and-learned-everything-about-cache-locality",
+    "title": "\"I Spent 48 Hours Trying to Optimize a Toaster Simulator and Learned Everything About Cache Locality\"",
+    "description": "LLM-generated CS blog lesson on I Spent 48 Hours Trying to Optimize a Toaster Simulator and Learned Everything About Cache Locality.",
+    "sidebar_position": 1,
+    "tags": [
+      "cache",
+      "optimization",
+      "performance"
+    ],
+    "date": "2025-04-17",
+    "content": "# I Spent 48 Hours Trying to Optimize a Toaster Simulator and Learned Everything About Cache Locality\n===========================================================\n\n## Introduction to the Toaster Simulator Madness\n---------------------------------------------\n\nSo, you're probably wondering why I spent 48 hours of my life trying to optimize a toaster simulator. Well, let me tell you - it's not because I have a passion for toasting bread (although, I do love a good slice of toasted sourdough). It's ..."
+  },
+  {
     "id": "cpu-caches-explained-with-grocery-shopping",
     "title": "CPU Caches Explained with Grocery Shopping",
     "description": "LLM-generated CS blog lesson on CPU Caches Explained with Grocery Shopping.",
