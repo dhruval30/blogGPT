@@ -21,11 +21,21 @@ AUTHOR_ID = "dhruval"
 # === Better Blog-Worthy CS Prompts ===
 def generate_single_cs_topic():
     prompt = """
-    Generate one funny, clever, and educational blog post title that teaches a computer science concept.
-    The style should feel like a Reddit/HackerNews post — make it sound nerdy, click-worthy, and fun.
-    Avoid boring textbook phrases.
+    You are an expert CS educator and tech blogger with a flair for writing viral, weirdly specific, Reddit-style posts.
 
-    Output format: a JSON string like "Your blog title here"
+    Generate ONE unique, funny, clever, and educational blog post title that teaches a CS topic in a quirky way.
+    
+    ✦ Avoid overused topics like: recursion, pointers, "what happens when you type...", binary trees, or sorting algorithms.
+    ✦ Instead, explore things like: OS internals, concurrency, compilers, caches, distributed systems, weird bugs, or misunderstood design patterns.
+    ✦ The title should feel like something a burned-out grad student would post at 3AM with too much caffeine.
+    ✦ Format: a JSON string like "Your blog title here"
+    ✦ Do not repeat ideas. Be original. Be weird. Be oddly specific.
+
+    Examples (don’t repeat):
+    - "How I Accidentally DDOSed Myself with a While Loop and a Pizza Tracker"
+    - "Threads, Forks, and Existential Dread: A Crash Course in Concurrency"
+    - "Why My Compiler Screams When I Use Macros This Way"
+    - "A Deep Dive Into File Descriptors (aka How I Broke My Terminal for 2 Hours)"
     """
 
     try:
