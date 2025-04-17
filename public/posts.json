@@ -222,13 +222,5 @@
     ],
     "date": "2025-04-14",
     "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**How Hash Maps Work (and Why Python Dicts Are Built Different)** dives deep into something every CS nerd should care about \u2014 in the nerdiest,..."
-  },
-  {
-    "slug": "dynamic-programming-isnt-hard",
-    "excerpt": "your-brain-just-wants-to-see-it-differently-log\ntitle: Dynamic Programming Isn't Hard \u2014 Your Brain Just Wants to See It Differently\nauthors: [dhruval]\ntags: [programming, algorithm, coding]\ndate: 2025..."
-  },
-  {
-    "slug": "warning:-your-brain-will-crash",
-    "excerpt": "understanding-recursion-through-the-lens-of-inception--spoiler-alert:-its-not-just-a-movie-plot-device--log\ntitle: Warning: Your Brain Will Crash - Understanding Recursion Through the Lens of Inceptio..."
   }
 ]
