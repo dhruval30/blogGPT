@@ -1,5 +1,18 @@
 [
   {
+    "id": "understanding-big-o-notation-in-algorithm-design",
+    "title": "\"Understanding Big O Notation in Algorithm Design\"",
+    "description": "LLM-generated CS blog lesson on Understanding Big O Notation in Algorithm Design.",
+    "sidebar_position": 1,
+    "tags": [
+      "algorithms",
+      "programming",
+      "performance"
+    ],
+    "date": "2025-04-18",
+    "content": "# Understanding Big O Notation in Algorithm Design\n=============================================\n\nHey fellow devs, have you ever found yourself stuck in a **never-ending loop** of confusion when it comes to Big O notation? You're not alone. Understanding the complexity of your algorithms is crucial in building efficient software, but it can be a daunting task, especially for beginners. In this post, we'll break down the basics of Big O notation and explore how it can help you become a better dev..."
+  },
+  {
     "id": "understanding-deadlocks-in-operating-systems",
     "title": "\"Understanding Deadlocks in Operating Systems\"",
     "description": "LLM-generated CS blog lesson on Understanding Deadlocks in Operating Systems.",

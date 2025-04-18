@@ -29,7 +29,6 @@ I'm creating a technical blog series for computer science students and developer
 Generate ONE short and original blog post title that meets the following criteria:
 - Slightly cool and engaging, without sounding forced or overly casual
 - Clear and informative, explaining a fundamental computer science concept accessibly
-- Fits within broad categories like systems, operating systems, web development, algorithms, networking, or software engineering
 - Keep the title concise — ideally under 15 words
 - Do not repeat common ideas like recursion, binary search, or "what happens when you type..."
 
