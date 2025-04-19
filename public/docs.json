@@ -26,6 +26,19 @@
     "content": "# Understanding Deadlocks in Operating Systems\n=============================================\n\nHey fellow tech enthusiasts, have you ever been stuck in a situation where two or more processes are waiting for each other to release a resource, but neither of them is willing to back down? This, my friends, is what we call a **deadlock**. In this post, we're going to delve into the world of deadlocks, explore what causes them, and learn how to avoid them.\n\n## What is a Deadlock?\n--------------------\n..."
   },
   {
+    "id": "understanding-time-complexity-in-algorithm-design",
+    "title": "\"Understanding Time Complexity in Algorithm Design\"",
+    "description": "LLM-generated CS blog lesson on Understanding Time Complexity in Algorithm Design.",
+    "sidebar_position": 1,
+    "tags": [
+      "algorithms",
+      "complexity",
+      "performance"
+    ],
+    "date": "2025-04-19",
+    "content": "# Understanding Time Complexity in Algorithm Design\n==============================================\n\nHey fellow devs, have you ever found yourself staring at a block of code, wondering why it's taking forever to run? **Time complexity** is the secret sauce that can make or break your algorithm's performance. In this post, we'll dive into the world of time complexity, exploring what it is, how it's measured, and why it matters.\n\n## What's the Big Deal about Time Complexity?\n-----------------------..."
+  },
+  {
     "id": "cpu-caches-explained-with-grocery-shopping",
     "title": "CPU Caches Explained with Grocery Shopping",
     "description": "LLM-generated CS blog lesson on CPU Caches Explained with Grocery Shopping.",

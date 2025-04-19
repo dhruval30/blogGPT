@@ -1,5 +1,19 @@
 [
   {
+    "slug": "understanding-time-complexity-in-algorithm-design-log",
+    "title": "\"Understanding Time Complexity in Algorithm Design\"",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "algorithms",
+      "complexity",
+      "performance"
+    ],
+    "date": "2025-04-19",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Understanding Time Complexity in Algorithm Design** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way..."
+  },
+  {
     "slug": "understanding-big-o-notation-in-algorithm-design-log",
     "title": "\"Understanding Big O Notation in Algorithm Design\"",
     "authors": [
