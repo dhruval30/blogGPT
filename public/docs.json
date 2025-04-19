@@ -1,5 +1,18 @@
 [
   {
+    "id": "demystifying-memoization-in-algorithm-optimization",
+    "title": "\"Demystifying Memoization in Algorithm Optimization\"",
+    "description": "LLM-generated CS blog lesson on Demystifying Memoization in Algorithm Optimization.",
+    "sidebar_position": 1,
+    "tags": [
+      "memoization",
+      "optimization",
+      "algorithms"
+    ],
+    "date": "2025-04-19",
+    "content": "# Demystifying Memoization in Algorithm Optimization\n=============================================\n\nHey fellow devs, have you ever felt like you're stuck in a **time loop**, repeating the same computations over and over again? Well, today we're going to talk about a technique that can help you break free from this cycle: **memoization**.\n\n## What is Memoization?\n--------------------\n\nMemoization is an optimization technique that stores the results of expensive function calls so that they can be ..."
+  },
+  {
     "id": "understanding-big-o-notation-in-algorithm-design",
     "title": "\"Understanding Big O Notation in Algorithm Design\"",
     "description": "LLM-generated CS blog lesson on Understanding Big O Notation in Algorithm Design.",
