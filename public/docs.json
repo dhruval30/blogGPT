@@ -52,6 +52,19 @@
     "content": "# Understanding Time Complexity in Algorithm Design\n==============================================\n\nHey fellow devs, have you ever found yourself staring at a block of code, wondering why it's taking forever to run? **Time complexity** is the secret sauce that can make or break your algorithm's performance. In this post, we'll dive into the world of time complexity, exploring what it is, how it's measured, and why it matters.\n\n## What's the Big Deal about Time Complexity?\n-----------------------..."
   },
   {
+    "id": "unlocking-sha-the-backbone-of-digital-security",
+    "title": "\"Unlocking SHA: The Backbone of Digital Security\"",
+    "description": "LLM-generated CS blog lesson on Unlocking SHA: The Backbone of Digital Security.",
+    "sidebar_position": 1,
+    "tags": [
+      "security",
+      "cryptography",
+      "sha"
+    ],
+    "date": "2025-04-21",
+    "content": "# Unlocking SHA: The Backbone of Digital Security\n==============================================\n\nHey fellow tech enthusiasts, today we're going to talk about the backbone of digital security: **SHA** (Secure Hash Algorithm). You might have heard of it, but do you really know how it works? In this post, we'll dive into the world of cryptography and explore the magic behind SHA. So, grab a snack, get comfortable, and let's get started!\n\n## What is SHA?\n---------------\n\nImagine you're at a party a..."
+  },
+  {
     "id": "cpu-caches-explained-with-grocery-shopping",
     "title": "CPU Caches Explained with Grocery Shopping",
     "description": "LLM-generated CS blog lesson on CPU Caches Explained with Grocery Shopping.",
