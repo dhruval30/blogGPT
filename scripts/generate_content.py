@@ -31,7 +31,6 @@ Generate ONE short and original blog post title that meets the following criteri
 - Clear and informative, explaining a fundamental computer science concept accessibly
 - Keep the title concise — ideally under 15 words
 - Do not repeat common ideas like recursion, binary search, or "what happens when you type..."
-- Explain SHA and how important it is in today's world
 
 Return only the title as plain text. Dont enclose it in quotes, no formatting, no extra explanation.
 """

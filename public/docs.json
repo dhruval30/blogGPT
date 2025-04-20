@@ -13,6 +13,19 @@
     "content": "# Demystifying Memoization in Algorithm Optimization\n=============================================\n\nHey fellow devs, have you ever felt like you're stuck in a **time loop**, repeating the same computations over and over again? Well, today we're going to talk about a technique that can help you break free from this cycle: **memoization**.\n\n## What is Memoization?\n--------------------\n\nMemoization is an optimization technique that stores the results of expensive function calls so that they can be ..."
   },
   {
+    "id": "uncovering-linux-the-backbone-of-modern-development",
+    "title": "\"Uncovering Linux: The Backbone of Modern Development\"",
+    "description": "LLM-generated CS blog lesson on Uncovering Linux: The Backbone of Modern Development.",
+    "sidebar_position": 1,
+    "tags": [
+      "linux",
+      "code",
+      "tech"
+    ],
+    "date": "2025-04-21",
+    "content": "# Uncovering Linux: The Backbone of Modern Development\n==============================================\n\nHey fellow tech enthusiasts, welcome to our journey into the fascinating world of Linux. As the backbone of modern development, Linux is the unsung hero that powers everything from smartphones to supercomputers. In this post, we'll delve into the **basics of Linux**, explore its **architecture**, and even dive into some **code snippets** to get you started with this incredible operating system...."
+  },
+  {
     "id": "understanding-big-o-notation-in-algorithm-design",
     "title": "\"Understanding Big O Notation in Algorithm Design\"",
     "description": "LLM-generated CS blog lesson on Understanding Big O Notation in Algorithm Design.",
