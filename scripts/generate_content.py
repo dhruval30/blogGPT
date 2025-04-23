@@ -33,6 +33,8 @@ Generate ONE short and original blog post title that meets the following criteri
 - Do not repeat common ideas like recursion, binary search, or "what happens when you type..."
 
 Return only the title as plain text. Dont enclose it in quotes, no formatting, no extra explanation.
+
+
 """
 
 

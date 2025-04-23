@@ -13,6 +13,19 @@
     "content": "# Demystifying Memoization in Algorithm Optimization\n=============================================\n\nHey fellow devs, have you ever felt like you're stuck in a **time loop**, repeating the same computations over and over again? Well, today we're going to talk about a technique that can help you break free from this cycle: **memoization**.\n\n## What is Memoization?\n--------------------\n\nMemoization is an optimization technique that stores the results of expensive function calls so that they can be ..."
   },
   {
+    "id": "math-foundations-in-coding-laying-the-groundwork",
+    "title": "\"Math Foundations in Coding: Laying the Groundwork\"",
+    "description": "LLM-generated CS blog lesson on Math Foundations in Coding: Laying the Groundwork.",
+    "sidebar_position": 1,
+    "tags": [
+      "math",
+      "code",
+      "algorithms"
+    ],
+    "date": "2025-04-23",
+    "content": "# Math Foundations in Coding: Laying the Groundwork\n===============================================\n\nHey fellow coders, **math-phobes and math-letes** alike. If you're anything like me, you probably didn't realize just how much math you'd be using when you started coding. I mean, sure, you might've had a hunch that **algorithms** and **data structures** would require some mathematical prowess, but the extent to which math permeates every aspect of programming can be staggering.\n\n## The Bridge Be..."
+  },
+  {
     "id": "uncovering-linux-the-backbone-of-modern-development",
     "title": "\"Uncovering Linux: The Backbone of Modern Development\"",
     "description": "LLM-generated CS blog lesson on Uncovering Linux: The Backbone of Modern Development.",
