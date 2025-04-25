@@ -26,19 +26,6 @@
     "content": "# LLMs Struggle with Letter Counting: A Hidden Complexity\n==============================================\n\n## Introduction to the Problem\nHey fellow tech enthusiasts, have you ever wondered how those fancy **Large Language Models (LLMs)** work? You know, the ones that can generate human-like text and answer questions on the fly? Well, today we're going to dive into a fascinating issue that highlights the complexities of these models: **letter counting**. Yep, you read that right - letter counting..."
   },
   {
-    "id": "llms-and-the-letter-counting-problem",
-    "title": "\"LLMs and the Letter Counting Problem\"",
-    "description": "LLM-generated CS blog lesson on LLMs and the Letter Counting Problem.",
-    "sidebar_position": 1,
-    "tags": [
-      "llms",
-      "nlp",
-      "ai"
-    ],
-    "date": "2025-04-25",
-    "content": "# LLMs and the Letter Counting Problem\n======================================\n\nHey fellow tech enthusiasts, have you ever wondered how those fancy **Large Language Models (LLMs)** can understand and generate human-like text? Today, we're going to dive into the fascinating world of natural language processing and explore one of the fundamental problems that LLMs face: the **letter counting problem**.\n\n## What's the Letter Counting Problem?\n------------------------------------\n\nImagine you're tryi..."
-  },
-  {
     "id": "math-foundations-in-coding-laying-the-groundwork",
     "title": "\"Math Foundations in Coding: Laying the Groundwork\"",
     "description": "LLM-generated CS blog lesson on Math Foundations in Coding: Laying the Groundwork.",
