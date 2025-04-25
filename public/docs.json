@@ -13,6 +13,19 @@
     "content": "# Demystifying Memoization in Algorithm Optimization\n=============================================\n\nHey fellow devs, have you ever felt like you're stuck in a **time loop**, repeating the same computations over and over again? Well, today we're going to talk about a technique that can help you break free from this cycle: **memoization**.\n\n## What is Memoization?\n--------------------\n\nMemoization is an optimization technique that stores the results of expensive function calls so that they can be ..."
   },
   {
+    "id": "llms-struggle-with-letter-counting-a-hidden-complexity",
+    "title": "\"LLMs Struggle with Letter Counting: A Hidden Complexity\"",
+    "description": "LLM-generated CS blog lesson on LLMs Struggle with Letter Counting: A Hidden Complexity.",
+    "sidebar_position": 1,
+    "tags": [
+      "llms",
+      "nlp",
+      "ai"
+    ],
+    "date": "2025-04-25",
+    "content": "# LLMs Struggle with Letter Counting: A Hidden Complexity\n==============================================\n\n## Introduction to the Problem\nHey fellow tech enthusiasts, have you ever wondered how those fancy **Large Language Models (LLMs)** work? You know, the ones that can generate human-like text and answer questions on the fly? Well, today we're going to dive into a fascinating issue that highlights the complexities of these models: **letter counting**. Yep, you read that right - letter counting..."
+  },
+  {
     "id": "llms-and-the-letter-counting-problem",
     "title": "\"LLMs and the Letter Counting Problem\"",
     "description": "LLM-generated CS blog lesson on LLMs and the Letter Counting Problem.",

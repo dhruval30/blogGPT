@@ -33,6 +33,11 @@ Generate ONE short and original blog post title that meets the following criteri
 - Do not repeat common ideas like recursion, binary search, or "what happens when you type..."
 
 Return only the title as plain text. Dont enclose it in quotes, no formatting, no extra explanation.
+Topic is: Why LLMs Sometimes Struggles with Counting Letters in a Word
+Large language models are astonishingly good at mimicking human conversation, writing code, answering questions, and even passing standardized tests. But strangely enough, they can occasionally stumble on a very simple task: counting how many times a specific letter appears in a word.
+For example, a user might ask: “How many g’s are in the word htgggghjdhgbgggg?”
+And GPT might confidently reply with an incorrect count.
+
 
 """
 
