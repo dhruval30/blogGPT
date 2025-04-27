@@ -52,6 +52,19 @@
     "content": "# Math Foundations in Coding: Laying the Groundwork\n===============================================\n\nHey fellow coders, **math-phobes and math-letes** alike. If you're anything like me, you probably didn't realize just how much math you'd be using when you started coding. I mean, sure, you might've had a hunch that **algorithms** and **data structures** would require some mathematical prowess, but the extent to which math permeates every aspect of programming can be staggering.\n\n## The Bridge Be..."
   },
   {
+    "id": "neural-networks-as-logistic-regression-fundamentals",
+    "title": "\"Neural Networks as Logistic Regression Fundamentals\"",
+    "description": "LLM-generated CS blog lesson on Neural Networks as Logistic Regression Fundamentals.",
+    "sidebar_position": 1,
+    "tags": [
+      "neural",
+      "logistic",
+      "machine"
+    ],
+    "date": "2025-04-27",
+    "content": "# Neural Networks as Logistic Regression Fundamentals\n=============================================\n\nHey there, fellow tech enthusiasts. Today we're going to dive into the fascinating world of **neural networks** and explore how they're connected to **logistic regression**. But before we begin, let's set the stage with a clever metaphor. Imagine you're at a music festival, and you're trying to predict whether a person will enjoy a particular song or not. You can use various factors like their ag..."
+  },
+  {
     "id": "uncovering-linux-the-backbone-of-modern-development",
     "title": "\"Uncovering Linux: The Backbone of Modern Development\"",
     "description": "LLM-generated CS blog lesson on Uncovering Linux: The Backbone of Modern Development.",
