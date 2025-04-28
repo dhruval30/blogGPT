@@ -1,5 +1,19 @@
 [
   {
+    "slug": "groqs-free-llm-inferences-via-compiler-optimizations-log",
+    "title": "\"Groq's Free LLM Inferences via Compiler Optimizations\"",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "ai",
+      "llm",
+      "optimization"
+    ],
+    "date": "2025-04-28",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Groq's Free LLM Inferences via Compiler Optimizations** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest..."
+  },
+  {
     "slug": "neural-networks-as-logistic-regression-fundamentals-log",
     "title": "\"Neural Networks as Logistic Regression Fundamentals\"",
     "authors": [

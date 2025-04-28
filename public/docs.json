@@ -13,6 +13,19 @@
     "content": "# Demystifying Memoization in Algorithm Optimization\n=============================================\n\nHey fellow devs, have you ever felt like you're stuck in a **time loop**, repeating the same computations over and over again? Well, today we're going to talk about a technique that can help you break free from this cycle: **memoization**.\n\n## What is Memoization?\n--------------------\n\nMemoization is an optimization technique that stores the results of expensive function calls so that they can be ..."
   },
   {
+    "id": "groqs-free-llm-inferences-via-compiler-optimizations",
+    "title": "\"Groq's Free LLM Inferences via Compiler Optimizations\"",
+    "description": "LLM-generated CS blog lesson on Groq's Free LLM Inferences via Compiler Optimizations.",
+    "sidebar_position": 1,
+    "tags": [
+      "ai",
+      "llm",
+      "optimization"
+    ],
+    "date": "2025-04-28",
+    "content": "# Groq's Free LLM Inferences via Compiler Optimizations\n=====================================================\n\nHey fellow tech enthusiasts, welcome to today's post where we're going to talk about something really cool - **free LLM inferences** courtesy of Groq's clever compiler optimizations. But before we dive into the juicy stuff, let's set the scene.\n\n## What's the Big Deal about LLM Inferences?\n------------------------------------------\n\nIf you've been following the recent advancements in AI..."
+  },
+  {
     "id": "introducing-elixir-a-modern-take-on-erlang-concurrency",
     "title": "\"Introducing Elixir: A Modern Take on Erlang Concurrency\"",
     "description": "LLM-generated CS blog lesson on Introducing Elixir: A Modern Take on Erlang Concurrency.",
