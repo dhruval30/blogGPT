@@ -1,5 +1,19 @@
 [
   {
+    "slug": "decoding-schrodingers-cat-in-computer-science-log",
+    "title": "\"Decoding Schrodinger's Cat in Computer Science\"",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "computers",
+      "quantum",
+      "science"
+    ],
+    "date": "2025-04-30",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Decoding Schrodinger's Cat in Computer Science** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way po..."
+  },
+  {
     "slug": "groqs-free-llm-inferences-via-compiler-optimizations-log",
     "title": "\"Groq's Free LLM Inferences via Compiler Optimizations\"",
     "authors": [

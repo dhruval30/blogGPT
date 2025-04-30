@@ -1,5 +1,18 @@
 [
   {
+    "id": "decoding-schrodingers-cat-in-computer-science",
+    "title": "\"Decoding Schrodinger's Cat in Computer Science\"",
+    "description": "LLM-generated CS blog lesson on Decoding Schrodinger's Cat in Computer Science.",
+    "sidebar_position": 1,
+    "tags": [
+      "computers",
+      "quantum",
+      "science"
+    ],
+    "date": "2025-04-30",
+    "content": "# Decoding Schrodinger's Cat in Computer Science\n====================================================================\n\n## Introduction to the Purr-fect Paradox\nImagine a cat stuck in a box with a radioactive atom that has a 50% chance of decaying within a certain time frame. If it decays, a poison is released, and our poor feline friend meets its demise. But here's the weird part: **according to quantum mechanics, the cat is both alive AND dead at the same time**, until someone opens the box and..."
+  },
+  {
     "id": "demystifying-memoization-in-algorithm-optimization",
     "title": "\"Demystifying Memoization in Algorithm Optimization\"",
     "description": "LLM-generated CS blog lesson on Demystifying Memoization in Algorithm Optimization.",
