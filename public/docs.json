@@ -65,6 +65,19 @@
     "content": "# LLMs Struggle with Letter Counting: A Hidden Complexity\n==============================================\n\n## Introduction to the Problem\nHey fellow tech enthusiasts, have you ever wondered how those fancy **Large Language Models (LLMs)** work? You know, the ones that can generate human-like text and answer questions on the fly? Well, today we're going to dive into a fascinating issue that highlights the complexities of these models: **letter counting**. Yep, you read that right - letter counting..."
   },
   {
+    "id": "mastering-agility-in-sde-with-scrum-essentials",
+    "title": "\"Mastering Agility in SDE with Scrum Essentials\"",
+    "description": "LLM-generated CS blog lesson on Mastering Agility in SDE with Scrum Essentials.",
+    "sidebar_position": 1,
+    "tags": [
+      "agile",
+      "scrum",
+      "dev"
+    ],
+    "date": "2025-05-01",
+    "content": "### Mastering Agility in SDE with Scrum Essentials\n#### Introduction to Agile Development\nHey fellow devs, have you ever felt like you're stuck in a never-ending cycle of **waterfall development**? You know, where you spend months planning, only to have your project scope change on you? Yeah, it's a real pain. That's where **Agile development** comes in - a methodology that's all about being flexible, adaptable, and **responsive to change**.\n\nIn this post, we're going to dive into the world of *..."
+  },
+  {
     "id": "math-foundations-in-coding-laying-the-groundwork",
     "title": "\"Math Foundations in Coding: Laying the Groundwork\"",
     "description": "LLM-generated CS blog lesson on Math Foundations in Coding: Laying the Groundwork.",
