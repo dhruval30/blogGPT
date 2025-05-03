@@ -1,5 +1,18 @@
 [
   {
+    "id": "cracking-leetcode-a-path-to-coding-mastery",
+    "title": "\"Cracking LeetCode: A Path to Coding Mastery\"",
+    "description": "LLM-generated CS blog lesson on Cracking LeetCode: A Path to Coding Mastery.",
+    "sidebar_position": 1,
+    "tags": [
+      "code",
+      "leetcode",
+      "algorithms"
+    ],
+    "date": "2025-05-04",
+    "content": "# Cracking LeetCode: A Path to Coding Mastery\n==============================================\n\nHey fellow coders, are you ready to level up your programming skills and become a **coding ninja**? Look no further than LeetCode, the ultimate platform for mastering the art of coding. In this post, we'll embark on a journey to **crack LeetCode** and explore the fascinating world of computer science concepts, clever techniques, and **problem-solving strategies**.\n\n## Why LeetCode Matters\n--------------..."
+  },
+  {
     "id": "decoding-schrodingers-cat-in-computer-science",
     "title": "\"Decoding Schrodinger's Cat in Computer Science\"",
     "description": "LLM-generated CS blog lesson on Decoding Schrodinger's Cat in Computer Science.",
