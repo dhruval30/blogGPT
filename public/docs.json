@@ -104,6 +104,19 @@
     "content": "### Mastering Agility in SDE with Scrum Essentials\n#### Introduction to Agile Development\nHey fellow devs, have you ever felt like you're stuck in a never-ending cycle of **waterfall development**? You know, where you spend months planning, only to have your project scope change on you? Yeah, it's a real pain. That's where **Agile development** comes in - a methodology that's all about being flexible, adaptable, and **responsive to change**.\n\nIn this post, we're going to dive into the world of *..."
   },
   {
+    "id": "mastering-git-fundamentals-from-the-ground-up",
+    "title": "\"Mastering Git Fundamentals from the Ground Up\"",
+    "description": "LLM-generated CS blog lesson on Mastering Git Fundamentals from the Ground Up.",
+    "sidebar_position": 1,
+    "tags": [
+      "git",
+      "coding",
+      "development"
+    ],
+    "date": "2025-05-04",
+    "content": "# Mastering Git Fundamentals from the Ground Up\n==============================================\n\nHey there, fellow devs! Are you tired of feeling like Git is a mysterious black box that you're just tossing files into? Do you dream of being a **Git Master**, with the power to wield the ultimate version control system like a pro? Well, buckle up, because today we're going to take a wild ride from the **basics to the baller** level of Git fundamentals.\n\n## What's Git, Anyway?\n-----------------------..."
+  },
+  {
     "id": "math-foundations-in-coding-laying-the-groundwork",
     "title": "\"Math Foundations in Coding: Laying the Groundwork\"",
     "description": "LLM-generated CS blog lesson on Math Foundations in Coding: Laying the Groundwork.",
