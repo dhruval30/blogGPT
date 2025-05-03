@@ -42,6 +42,20 @@
     "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Cracking LeetCode: A Path to Coding Mastery** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way possi..."
   },
   {
+    "slug": "crafting-commits-the-art-of-git-history-log",
+    "title": "\"Crafting Commits: The Art of Git History\"",
+    "authors": [
+      "dhruval"
+    ],
+    "tags": [
+      "git",
+      "coding",
+      "devops"
+    ],
+    "date": "2025-05-04",
+    "excerpt": "Here's today's drop from KnowGrow \u2014 and it's a good one.\n\n**Crafting Commits: The Art of Git History** dives deep into something every CS nerd should care about \u2014 in the nerdiest, coolest way possible..."
+  },
+  {
     "slug": "mastering-agility-in-sde-with-scrum-essentials-log",
     "title": "\"Mastering Agility in SDE with Scrum Essentials\"",
     "authors": [
