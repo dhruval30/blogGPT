@@ -91,6 +91,19 @@
     "content": "# Math Foundations in Coding: Laying the Groundwork\n===============================================\n\nHey fellow coders, **math-phobes and math-letes** alike. If you're anything like me, you probably didn't realize just how much math you'd be using when you started coding. I mean, sure, you might've had a hunch that **algorithms** and **data structures** would require some mathematical prowess, but the extent to which math permeates every aspect of programming can be staggering.\n\n## The Bridge Be..."
   },
   {
+    "id": "modeling-volatility-with-garch-in-quantitative-finance",
+    "title": "\"Modeling Volatility with GARCH in Quantitative Finance\"",
+    "description": "LLM-generated CS blog lesson on Modeling Volatility with GARCH in Quantitative Finance.",
+    "sidebar_position": 1,
+    "tags": [
+      "finance",
+      "garch",
+      "python"
+    ],
+    "date": "2025-05-04",
+    "content": "### Modeling Volatility with GARCH in Quantitative Finance\n#### Or, How to Tame the Beast that is Financial Market Uncertainty\nHey fellow tech enthusiasts and finance nerds, welcome to our latest deep dive into the fascinating world of quantitative finance. Today, we're going to tackle one of the most fundamental and intriguing topics in the field: **modeling volatility**. But before we dive in, let's set the stage: imagine you're a sailor navigating through treacherous waters, and the sea is th..."
+  },
+  {
     "id": "neural-networks-as-logistic-regression-fundamentals",
     "title": "\"Neural Networks as Logistic Regression Fundamentals\"",
     "description": "LLM-generated CS blog lesson on Neural Networks as Logistic Regression Fundamentals.",
