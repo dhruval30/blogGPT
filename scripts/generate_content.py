@@ -34,7 +34,7 @@ Generate ONE short and original blog post title that meets the following criteri
 
 Return only the title as plain text. Dont enclose it in quotes, no formatting, no extra explanation.
 
-the topic is: history of RUST
+the topic is: JS vs TS
 
 
 """

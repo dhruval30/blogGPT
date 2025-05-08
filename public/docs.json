@@ -169,6 +169,19 @@
     "content": "# Testing the Foundation: Introduction to QA Fundamentals\n====================================================================================\n\nHey there, fellow tech enthusiasts! Welcome to our journey into the fascinating world of **Quality Assurance (QA)**. You know, the folks who save the day by making sure your code doesn't turn into a **crashy mess**. As developers, we've all been there - pouring our hearts and souls into a project, only to have it **fail miserably** in production. But fea..."
   },
   {
+    "id": "type-safety-showdown-javascript-vs-typescript",
+    "title": "\"Type Safety Showdown: JavaScript vs TypeScript\"",
+    "description": "LLM-generated CS blog lesson on Type Safety Showdown: JavaScript vs TypeScript.",
+    "sidebar_position": 1,
+    "tags": [
+      "javascript",
+      "typescript",
+      "coding"
+    ],
+    "date": "2025-05-08",
+    "content": "# Type Safety Showdown: JavaScript vs TypeScript\n==============================================\n\n## Introduction to the Main Event\nJavaScript and TypeScript are two popular programming languages used for developing web applications. While they share many similarities, one key difference is their approach to **type safety**. In this post, we'll delve into the world of type safety, exploring the strengths and weaknesses of each language. Buckle up, folks, it's time to get technical!\n\n### What is T..."
+  },
+  {
     "id": "uncovering-linux-the-backbone-of-modern-development",
     "title": "\"Uncovering Linux: The Backbone of Modern Development\"",
     "description": "LLM-generated CS blog lesson on Uncovering Linux: The Backbone of Modern Development.",
