@@ -182,6 +182,19 @@
     "content": "# Uncovering Linux: The Backbone of Modern Development\n==============================================\n\nHey fellow tech enthusiasts, welcome to our journey into the fascinating world of Linux. As the backbone of modern development, Linux is the unsung hero that powers everything from smartphones to supercomputers. In this post, we'll delve into the **basics of Linux**, explore its **architecture**, and even dive into some **code snippets** to get you started with this incredible operating system...."
   },
   {
+    "id": "uncovering-the-origins-of-rust-programming-language",
+    "title": "\"Uncovering the Origins of Rust Programming Language\"",
+    "description": "LLM-generated CS blog lesson on Uncovering the Origins of Rust Programming Language.",
+    "sidebar_position": 1,
+    "tags": [
+      "rust",
+      "programming",
+      "languages"
+    ],
+    "date": "2025-05-08",
+    "content": "# Uncovering the Origins of Rust Programming Language\n=============================================\n\n## Introduction to Rust\n---------------\n\nHey fellow tech enthusiasts, have you ever wondered where the **Rust programming language** came from? Well, buckle up, because we're about to take a fascinating journey through the history of Rust. From its humble beginnings to its current status as a **systems programming powerhouse**, Rust has come a long way. In this post, we'll delve into the origins ..."
+  },
+  {
     "id": "understanding-big-o-notation-in-algorithm-design",
     "title": "\"Understanding Big O Notation in Algorithm Design\"",
     "description": "LLM-generated CS blog lesson on Understanding Big O Notation in Algorithm Design.",
